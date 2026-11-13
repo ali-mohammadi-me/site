@@ -1,17 +1,13 @@
-<style>
- 
-
-    #loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #ffffff; /* اگر سایت مقصد تیره است، این را به #000000 تغییر دهید */
-        z-index: 9999;
-        font-family: sans-serif;
-    }
-</style>
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    z-index: 9999;
+    font-family: sans-serif;
+}
