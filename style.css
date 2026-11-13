@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  /* استفاده از همان گرادینت پس‌زمینه سایت اصلی شما */
+ 
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
@@ -17,7 +17,7 @@
   visibility: hidden;
 }
 
-/* دایره چرخان با رنگ آبی متناسب با حباب‌های پیام شما (#579ffb) */
+
 .spinner {
   width: 70px;
   height: 70px;
@@ -29,7 +29,7 @@
   box-shadow: 0 0 20px rgba(87, 159, 251, 0.3);
 }
 
-/* نقاط پالس شونده با رنگ آبی سایت */
+
 .loader-dots {
   display: flex;
   gap: 8px;
@@ -47,7 +47,7 @@
 .loader-dots span:nth-child(3) { animation-delay: 0.4s; }
 
 .loader-text {
-  /* تغییر رنگ متن به خاکستری تیره برای خوانایی در پس‌زمینه روشن */
+ 
   color: #666;
   font-family: Helvetica, sans-serif;
   font-size: 1rem;
