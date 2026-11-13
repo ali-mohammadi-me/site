@@ -18,8 +18,9 @@ fetch('config.txt')
 
         var loader = document.getElementById('loader');
         if (loader) {
-            loader.style.display = 'none';
+            loader.classList.add('hidden'); // به جای display=none از این استفاده کنید
         }
+        
     })
     .catch(err => console.error("Error loading config:", err));
 
