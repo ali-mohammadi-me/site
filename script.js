@@ -16,7 +16,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 container.appendChild(ifrm);
             }
 
-            // این خط لودینگ را بعد از ساخته شدن iframe مخفی می‌کند
             var loader = document.getElementById('loader');
             if (loader) {
                 loader.style.display = 'none';
@@ -24,3 +23,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
         })
         .catch(err => console.error("Error loading config:", err));
 });
+
