@@ -2,10 +2,31 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>GPT 4</title>
+    <title>Location ChatGPT 4 </title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #000; }
-        #_view_frame { width: 100%; height: 100%; border: none; }
+        /* ۱. اطمینان از اینکه کل صفحه بدون فاصله است */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #000; 
+        }
+        
+        /* ۲. نکته طلایی: ظرف اصلی باید ۱۰۰٪ ارتفاع و عرض را بگیرد */
+        #app_container { 
+            width: 100%; 
+            height: 100%; 
+        }
+
+        /* ۳. استایل Iframe */
+        #_view_frame { 
+            width: 100%; 
+            height: 100%; 
+            border: none; 
+            display: block; /* جلوگیری از ایجاد فاصله کوچک در پایین صفحه */
+        }
     </style>
 </head>
 <body>
@@ -14,7 +35,6 @@
 
     <script>
         (function(_0x1, _0x2) {
-            
             var _0x5a21 = _0x1; 
             var _0x8b12 = atob(_0x5a21);
             
@@ -31,4 +51,3 @@
 
 </body>
 </html>
-
