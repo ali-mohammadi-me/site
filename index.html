@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Location ChatGPT 4 </title>
+  
+    <link rel="stylesheet" href="style.css"> 
+    
     <style>
-        
         body, html { 
             margin: 0; 
             padding: 0; 
             height: 100%; 
             width: 100%; 
             overflow: hidden; 
-            background-color: #000; 
+            /* تغییر رنگ از سیاه به سفید برای جلوگیری از فلش سیاه */
+            background-color: #ffffff; 
         }
         
         #app_container { 
@@ -23,15 +26,15 @@
             width: 100%; 
             height: 100%; 
             border: none; 
-            display: block; /* جلوگیری از ایجاد فاصله کوچک در پایین صفحه */
+            display: block; 
         }
     </style>
 </head>
 <body>
 
-    <div id="app_container"></div>
-
     <div id="loader">Loading...</div>
+
+    <div id="app_container"></div>
 
     <script src="script.js"></script>
 
