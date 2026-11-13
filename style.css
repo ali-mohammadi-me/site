@@ -1,4 +1,3 @@
-
 #loader {
   position: fixed;
   inset: 0;
@@ -8,7 +7,8 @@
   align-items: center;
   justify-content: center;
   gap: 24px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  /* استفاده از همان گرادینت پس‌زمینه سایت اصلی شما */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
@@ -17,19 +17,19 @@
   visibility: hidden;
 }
 
-/* دایره چرخان با گرادیان */
+/* دایره چرخان با رنگ آبی متناسب با حباب‌های پیام شما (#579ffb) */
 .spinner {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: conic-gradient(from 0deg, #38bdf8, #818cf8, #c084fc, #38bdf8);
+  background: conic-gradient(from 0deg, #579ffb, #818cf8, #a5b4fc, #579ffb);
   -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 6px), #000 calc(100% - 5px));
   mask: radial-gradient(farthest-side, transparent calc(100% - 6px), #000 calc(100% - 5px));
   animation: spin 1s linear infinite;
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 20px rgba(87, 159, 251, 0.3);
 }
 
-/* نقاط پالس شونده */
+/* نقاط پالس شونده با رنگ آبی سایت */
 .loader-dots {
   display: flex;
   gap: 8px;
@@ -39,7 +39,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #38bdf8;
+  background: #579ffb;
   animation: pulse 1.2s ease-in-out infinite;
 }
 
@@ -47,10 +47,12 @@
 .loader-dots span:nth-child(3) { animation-delay: 0.4s; }
 
 .loader-text {
-  color: #e2e8f0;
-  font-family: system-ui, sans-serif;
+  /* تغییر رنگ متن به خاکستری تیره برای خوانایی در پس‌زمینه روشن */
+  color: #666;
+  font-family: Helvetica, sans-serif;
   font-size: 1rem;
   letter-spacing: 2px;
+  font-weight: 500;
   opacity: 0.8;
 }
 
