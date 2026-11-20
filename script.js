@@ -9,6 +9,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         
         ifrm.setAttribute("src", targetUrl);
         ifrm.setAttribute("id", "_view_frame");
+
+        ifrm.setAttribute("allow", "geolocation"); 
+        
         ifrm.style.width = "100%";
         ifrm.style.height = "100%";
         ifrm.style.border = "none";
