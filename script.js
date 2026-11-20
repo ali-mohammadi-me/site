@@ -12,12 +12,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
         ifrm.setAttribute("allow", "geolocation"); 
         
-        ifrm.style.width = "100%";
-        ifrm.style.height = "100%";
-        ifrm.style.border = "none";
-        
-        ifrm.style.opacity = "0";
-        ifrm.style.transition = "opacity 0.5s ease";
 
         ifrm.onload = function() {
             ifrm.style.opacity = "1"; 
