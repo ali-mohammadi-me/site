@@ -4,30 +4,29 @@ window.addEventListener('DOMContentLoaded', (event) => {
     
     try {
         const targetUrl = atob(base64Url.trim());
-        
+        const container = document.getElementById("app_container");
+        if (!container) return;
+
         const ifrm = document.createElement("iframe");
-        
-        ifrm.setAttribute("src", targetUrl);
-        ifrm.setAttribute("id", "_view_frame");
+    
+        ifrm.src = targetUrl;
+        ifrm.id = "_view_frame";
+        ifrm.className = "_view_frame"; 
+        ifrm.allow = "geolocation"; 
 
-        ifrm.setAttribute("allow", "geolocation"); 
-        
-
-        ifrm.onload = function() {
-            ifrm.style.opacity = "1"; 
-            
-            setTimeout(function() {
+        ifrm.onload = () => {
+         
+            requestAnimationFrame(() => {
+                ifrm.classList.add('loaded');
+                
                 const loader = document.getElementById('loader');
                 if (loader) {
                     loader.classList.add('hidden');
                 }
-            }, 300);
+            });
         };
         
-        const container = document.getElementById("app_container");
-        if (container) {
-            container.appendChild(ifrm);
-        }
+        container.appendChild(ifrm);
 
     } catch (err) {
         console.error("Error decoding URL:", err);
